@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  
+
+
+    <div class="app-body app-container">
+        <div class="app-holder">
+            <div class="section-top-icon">
+                <div class="big-menu menu-icon">
+                    <i class='bx bx-menu-alt-left'></i>
+                </div>
+
+                <div class="profile-image">
+                    <img src="IMG/profileimage.jpg" alt="">
+                </div>
+            </div>
+            <div class="section-2">
+                <p class="big-text">Fast and Delicious Food</p>
+            </div>
+            <div class="search-bar-holder">
+                <div class="search">
+                    <ion-icon name="search-outline"></ion-icon><input type="search" placeholder="Search" name="" id="">
+                </div>
+                <button class="big-red-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="cartegories-holder">
+                <div class="cartegories">
+                    <ul>
+                        <li class="active-cartegory" id="carteg1">All</li>
+                        <li class="cartegory" id="carteg2">Pizza</li>
+                        <li class="cartegory" id="carteg3">Burger</li>
+                        <li class="cartegory" id="carteg4">Sushi</li>
+                        <li class="cartegory" id="carteg5">Pie</li>
+                        <li class="cartegory" id="carteg6">Fries</li>
+                        <li class="cartegory" id="carteg7">Nuggets</li>
+                        <li class="cartegory" id="carteg8">Tacos</li>
+                        <li class="cartegory" id="carteg9">Chips</li>
+                        <li class="cartegory" id="carteg10">Sandwiches</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-holder">
+                <div class="card-scroller">
+                    <!-- <div class="active-food-card food-card">
+                        <div class="section-top-icon">
+                            <div class="menu-icon">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Veggie Burger</p>
+                            </div>
+
+                            <div class="food-card-img">
+                                <img src="IMG/burger.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number">3</span></p>
+                            <p class="circle-btn">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                          <div class="active-price-div">
+                            <p class="active-price">N 1000.23</p>
+
+                            <div class="add-to-cart-btn">
+                                <i class='bx bx-shopping-bag'></i> Add to cart
+                            </div>
+                          </div>
+                        </div>
+                        <div class="food-details">
+                            <p class="food-name">Veggie Burger</p>
+                            <p class="food-ingredient"><span>Vegitable</span>, <span>Buns</span>, <span>Cheese</span>,
+                                <span>Tomato.</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 1000.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div> -->
+
+
+                    <div class="food-card burger" id="food-card-1">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk1">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Veggie Burger</p>
+                            </div>
+
+                            <div id="img1" class="food-card-img">
+                                <img src="IMG/burger.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn increase-btn1" id="inc1">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number number1" id="num1">3</span></p>
+                            <p class="circle-btn decrease-btn decrease-btn1" id="dc1">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 1000.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details">
+                            <p class="food-name">Veggie Burger</p>
+                            <p class="food-ingredient"><span>Vegitable</span>, <span>Buns</span>, <span>Cheese</span>,
+                                <span>Tomato.</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 1000.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card burger" id="food-card-2">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk2">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Beef Burger</p>
+                            </div>
+
+                            <div id="img2" class="food-card-img">
+                                <img src="IMG/burger2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc2">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num2">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc2">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details">
+                            <p class="food-name">Beef Burger</p>
+                            <p class="food-ingredient"><span>Beef</span>, <span>Buns</span>, <span>Cheese</span>,
+                                <span>Tomato.</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card nuggest" id="food-card-3">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk3">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Chicken Nuggets</p>
+                            </div>
+
+                            <div id="img3" class="food-card-img">
+                                <img src="IMG/nuggest2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details">
+                            <p class="food-name">Chicken Nuggets</p>
+                            <p class="food-ingredient"><span>Chicken</span>, <span>Butter</span></p>
+                        </div>
+                        <div class="price-div compensiate-big-img">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card nuggest" id="food-card-4">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk4">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Chicken Nuggets</p>
+                            </div>
+
+                            <div id="img4" class="food-card-img">
+                                <img src="IMG/nuggests.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Chicken Nuggets</p>
+                            <p class="food-ingredient"><span>Chicken</span>, <span>Butter</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card pizza" id="food-card-5">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk5">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Classic Pizza</p>
+                            </div>
+
+                            <div id="img5" class="food-card-img">
+                                <img src="IMG/pizza.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Classic Pizza</p>
+                            <p class="food-ingredient"><span>Dought</span><span>Tomatos</span>,
+                                <span>Onions,</span><span>Curry</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card pizza" id="food-card-6">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk6">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Chilli Pizza</p>
+                            </div>
+
+                            <div id="img6" class="food-card-img">
+                                <img src="IMG/pizza2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Chilli Pizza</p>
+                            <p class="food-ingredient"><span>Dought</span>, <span>Chilli</span>, <span>Onions</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card pizza" id="food-card-7">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk7">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Veggie Pizza</p>
+                            </div>
+
+                            <div id="img7" class="food-card-img">
+                                <img src="IMG/pizza3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Veggie Pizza</p>
+                            <p class="food-ingredient"><span>Dought</span>, <span>Potatoes</span>, <span>Onions</span>
+                            </p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card sushi" id="food-card-8">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk8">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Sushi</p>
+                            </div>
+
+                            <div id="img8" class="food-card-img">
+                                <img src="IMG/sushi.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Sushi</p>
+                            <p class="food-ingredient"><span>Salmon</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card pie" id="food-card-9">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk9">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Apple pie</p>
+                            </div>
+
+                            <div id="img9" class="food-card-img">
+                                <img src="IMG/pie.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Apple pie</p>
+                            <p class="food-ingredient"><span>Apple,</span><span>Vinegar,</span><span>Dought</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card sandwich" id="food-card-10">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk10">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Sandwich</p>
+                            </div>
+
+                            <div id="img10" class="food-card-img">
+                                <img src="IMG/sandwhich.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Sandwich</p>
+                            <p class="food-ingredient"><span>Cabage</span><span>Onions,</span><span>Buns</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card sandwich" id="food-card-11">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk11">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Sandwich</p>
+                            </div>
+
+                            <div id="img11" class="food-card-img">
+                                <img src="IMG/sandwhich2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Sandwich</p>
+                            <p class="food-ingredient"><span>Spinach</span><span>Onions,</span><span>Bread</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card sandwich" id="food-card-11">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk11">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Sandwich</p>
+                            </div>
+
+                            <div id="img11" class="food-card-img">
+                                <img src="IMG/sandwhich3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Sandwich</p>
+                            <p class="food-ingredient"><span>Spinach</span><span>Onions,</span><span>Bread</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card sandwich" id="food-card-12">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk12">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Sandwich</p>
+                            </div>
+
+                            <div id="img12" class="food-card-img">
+                                <img src="IMG/sandwhich4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Sandwich</p>
+                            <p class="food-ingredient"><span>Beef</span><span>Onions,</span><span>Dought</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card sandwich" id="food-card-13">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk13">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Sandwich</p>
+                            </div>
+
+                            <div id="img13" class="food-card-img">
+                                <img src="IMG/sandwhich5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Sandwich</p>
+                            <p class="food-ingredient"><span>Beef</span><span>Onions,</span><span>Spoligi Buns</span>
+                            </p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card tacos" id="food-card-14">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk14">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Tacos</p>
+                            </div>
+
+                            <div id="img14" class="food-card-img">
+                                <img src="IMG/tacos.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Tacos</p>
+                            <p class="food-ingredient"><span>Beef</span><span>Onions,</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card tacos" id="food-card-15">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk15">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Tacos</p>
+                            </div>
+
+                            <div id="img15" class="food-card-img">
+                                <img src="IMG/tacos2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Tacos</p>
+                            <p class="food-ingredient"><span>Beef</span><span>Onions,</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card chips" id="food-card-16">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk16">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Fries</p>
+                            </div>
+
+                            <div id="img16" class="food-card-img">
+                                <img src="IMG/chips.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Fries</p>
+                            <p class="food-ingredient"><span>Irish Potatoes</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                    <div class="food-card chips" id="food-card-17">
+                        <div class="section-top-icon">
+                            <div class="menu-icon" id="bk17">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+
+                            <div class="float-right">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="active-food-image-holder">
+                            <div class="active-food-name">
+                                <p class="food-name">Chips</p>
+                            </div>
+
+                            <div id="img17" class="food-card-img">
+                                <img src="IMG/chips2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <p class="circle-btn increase-btn" id="inc3">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </p>
+                            <p class="circle-btn"><span class="number" id="num3">3</span></p>
+                            <p class="circle-btn decrease-btn" id="dc3">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <ul>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">129Kcal</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">10min - 15min</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/love-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">1.2votes</p>
+                                </li>
+                                <li>
+                                    <div class="icon-img">
+                                        <img src="IMG/weight-icon.png" alt="">
+                                    </div>
+                                    <p class="label-txt">12g</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="food-description-elements">
+                            <p class="food-name">Description</p>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam, nihil
+                                exercitationem in aliquid reprehenderit fuga,
+                                asperiores numquam voluptate vitae dignissimos
+                                accusantium iure voluptates rem dolores
+                                atque quas repellat mollitia eos.
+                            </p>
+                        </div>
+                        <div class="active-price-holder">
+                            <div class="active-price-div">
+                                <p class="active-price">N 100.23</p>
+
+                                <div class="add-to-cart-btn">
+                                    <i class='bx bx-shopping-bag'></i> Add to cart
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-details compensiate-small-img">
+                            <p class="food-name">Chips</p>
+                            <p class="food-ingredient"><span>Sweet Potatoes</span></p>
+                        </div>
+                        <div class="price-div">
+                            <div class="price">N 100.30</div>
+                            <div class="cart-icon-holder"><i class='bx bx-shopping-bag'></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <div class="section-top-icon centered">
+                        <div class="menu-icon back-from-cart">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </div>
+                        <p class="page-title">My Cart</p>
+                    </div>
+                    <div class="cart-card-holder">
+                        <div class="cart-card">
+                            <div class="cart-card-image">
+                                <img src="IMG/burger.png" alt="">
+                            </div>
+                            <div class="cart-card-info">
+                                <p class="number-of-product">
+                                    1x
+                                </p>
+                                <div>
+                                    <p class="food-name">Classic Pizza</p>
+                                    <p class="food-ingredient"><span>Dought</span><span>Tomatos</span>,
+                                        <span>Onions,</span><span>Curry</span></p>
+                                    <div class="price">N 100.30</div>
+                                </div>
+                                <div class="cancel">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-card">
+                            <div class="cart-card-image">
+                                <img src="IMG/tacos2.png" alt="">
+                            </div>
+                            <div class="cart-card-info">
+                                <p class="number-of-product">
+                                    1x
+                                </p>
+                                <div>
+                                    <p class="food-name">Tacos</p>
+                                    <p class="food-ingredient"><span>Dought</span><span>Tomatos</span>,
+                                        <span>Onions,</span><span>Curry</span></p>
+                                    <div class="price">N 100.30</div>
+                                </div>
+                                <div class="cancel">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-card">
+                            <div class="cart-card-image">
+                                <img src="IMG/pizza3.png" alt="">
+                            </div>
+                            <div class="cart-card-info">
+                                <p class="number-of-product">
+                                    1x
+                                </p>
+                                <div>
+                                    <p class="food-name">Pizza</p>
+                                    <p class="food-ingredient"><span>Dought</span><span>Tomatos</span>,
+                                        <span>Onions,</span><span>Curry</span></p>
+                                    <div class="price">N 100.30</div>
+                                </div>
+                                <div class="cancel">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centered full-width">
+                        <div class="cart-card-pricing">
+                            <div class="active-price-div">
+                                <div class="total-price">
+
+                                    <p class="small-txt">Total price</p>
+                                    <p class="active-price">
+                                        N 100.23</p>
+                                </div>
+
+                                <div class="add-to-cart-btn next">
+                                    Next
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment">
+                    <div class="section-top-icon centered">
+                        <div class="menu-icon back-from-payment">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </div>
+                        <p class="page-title">Payment</p>
+                    </div>
+                    <div class="cart-card-holder">
+                        <div class="payment-card light-bg">
+                            <div class="payment-card-icon">
+                                <img src="IMG/mastercard-logo.png" alt="">
+                            </div>
+                            <div class="payment-card-label ">
+                                Credit Card
+                            </div>
+                            <div class="payment-card-input-radio">
+                                <input type="radio" name="" id="" class="radio">
+                            </div>
+                        </div>
+
+                        <div class="payment-card dark-bg">
+                            <div class="payment-card-icon">
+                                <img src="IMG/paypal.png" alt="">
+                            </div>
+                            <div class="payment-card-label ">
+                                Paypal
+                            </div>
+                            <div class="payment-card-input-radio">
+                                <input type="radio" name="" id="" class="radio">
+                            </div>
+                        </div>
+
+                        <div class="payment-card dark-bg">
+                            <div class="payment-card-icon">
+                                <img src="IMG/google.png" alt="">
+                            </div>
+                            <div class="payment-card-label ">
+                                Google Pay
+                            </div>
+                            <div class="payment-card-input-radio">
+                                <input type="radio" name="" id="" class="radio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-coupon-container">
+                        <p class="food-name">Add Coupon</p>
+                        <div class="add-coupon-div">
+                            <div class="left-flexed">
+                                <p class="small-dark-text">Coupon Code</p>
+                                <input type="text" placeholder="Input code here" value="Jane21" name="" id=""
+                                    class="trans-input">
+                            </div>
+                            <div class="right-flexed">
+                                <span>
+                                    <ion-icon name="clipboard-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="add-coupon-container">
+                        <div class="flexer">
+                            <div class="left">
+                                <p class="txt">Taxation</p>
+                            </div>
+                            <div class="right">
+                                N 20,000
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="centered full-width">
+                        <div class="cart-card-pricing">
+                            <div class="active-price-div">
+                                <div class="total-price">
+
+                                    <p class="small-txt">Total price</p>
+                                    <p class="active-price">
+                                        N 100.23</p>
+                                </div>
+
+                                <div class="add-to-cart-btn">
+                                    Order Now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile-top">
+                        <p class="page-title light-txt">My Profile</p>
+                        <div class="x-icon">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="profile-image-holder">
+                        <div class="profile-image-page">
+                            <img src="IMG/profileimage.jpg" alt="">
+                            <span class="add">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="profile-section2">
+                        <div class="width-eightx">
+                            <p class="food-name">Anthony ibitoye samuel</p>
+                            <div class="profile-page-card-holder">
+                                <div class="profile-page-card">
+                                    <div class="big-icon">
+                                        <ion-icon name="call"></ion-icon>
+                                    </div>
+                                    <div class="profile-page-info">
+                                        <p class="small-dark-text">Phone Number</p>
+                                        <p class="txt-600">+ 8132467954</p>
+                                    </div>
+                                    <div class="small-icon-holder">
+                                        <div class="small-icon">
+                                            <ion-icon name="pencil"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-page-card">
+                                    <div class="big-icon">
+                                        <ion-icon name="mail-open-outline"></ion-icon>
+                                    </div>
+                                    <div class="profile-page-info">
+                                        <p class="small-dark-text">Email</p>
+                                        <p class="txt-600">ibitoyeumor@gmail.com</p>
+                                    </div>
+                                    <div class="small-icon-holder">
+                                        <div class="small-icon">
+                                            <ion-icon name="pencil"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-page-card">
+                                    <div class="big-icon">
+                                        <ion-icon name="card-outline"></ion-icon>
+                                    </div>
+                                    <div class="profile-page-info">
+                                        <p class="small-dark-text">Payment Methpd</p>
+                                        <p class="txt-600">Credit card,Apple Pay</p>
+                                    </div>
+                                    <div class="small-icon-holder">
+                                        <div class="small-icon">
+                                            <ion-icon name="pencil"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-page-card">
+                                    <div class="big-icon">
+                                        <i class='bx bx-package'></i>
+                                    </div>
+                                    <div class="profile-page-info">
+                                        <p class="small-dark-text">Address</p>
+                                        <p class="txt-600">Leki Phase II,Lagos State</p>
+                                    </div>
+                                    <div class="small-icon-holder">
+                                        <div class="small-icon">
+                                            <ion-icon name="pencil"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="width-100-btn-holder">
+                                <div class="width-100-btn">
+                                    Save
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notification-content-holder">
+                        <div class="notification-top">
+                            <span class="big-menu menu-icon">
+                                <i class='bx bx-menu'></i>
+                            </span>
+                            <p class="page-title">Notification</p>
+                            <div class="profile-image">
+                                <img src="IMG/profileimage.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="notification-points-holder">
+                            <div class="notification-card">
+                                <div class="point-number blue-bg">
+                                    +30
+                                </div>
+                                <div class="notification-info">
+                                    <p class="txt-600">you earned 30 Points!</p>
+                                    <p class="small-dark-text">2 Days ago.</p>
+                                </div>
+                            </div>
+
+                            <div class="notification-card">
+                                <div class="point-number red-bg">
+                                    +10
+                                </div>
+                                <div class="notification-info">
+                                    <p class="txt-600">you earned 10 Points!</p>
+                                    <p class="small-dark-text">4 Days ago.</p>
+                                </div>
+                            </div>
+
+                            <div class="notification-card">
+                                <div class="point-number orange-bg">
+                                    +60
+                                </div>
+                                <div class="notification-info">
+                                    <p class="txt-600">you earned 20 Points!</p>
+                                    <p class="small-dark-text">1 Days ago.</p>
+                                </div>
+                            </div>
+
+                            <div class="notification-card">
+                                <div class="point-number red-bg">
+                                    +10
+                                </div>
+                                <div class="notification-info">
+                                    <p class="txt-600">you earned 10 Points!</p>
+                                    <p class="small-dark-text">4 Days ago.</p>
+                                </div>
+                            </div>
+
+                            <div class="notification-card">
+                                <div class="point-number green-bg">
+                                    +60
+                                </div>
+                                <div class="notification-info">
+                                    <p class="txt-600">you earned 60 Points!</p>
+                                    <p class="small-dark-text">1 Days ago.</p>
+                                </div>
+                            </div>
+
+                            <div class="notification-card">
+                                <div class="point-number orange-bg">
+                                    +20
+                                </div>
+                                <div class="notification-info">
+                                    <p class="txt-600">you earned 20 Points!</p>
+                                    <p class="small-dark-text">1 Days ago.</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="notification-card">
+                                <div class="point-number green-bg">
+                                    +60
+                                </div>
+                                <div class="notification-info">
+                                    <p class="txt-600">you earned 60 Points!</p>
+                                    <p class="small-dark-text">1 Days ago.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="app-menu">
+                        <ul class="menu-list">
+                            <li class="home"><i class='bx bx-home-alt'></i></li>
+                            <li><i class='bx bx-heart'></i></li>
+                            <li class="active"><i class='bx bx-bell'></i></li>
+                            <li class="cart-menu-notif"><i class='bx bx-cart-alt'></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map-tracker">
+                    <div class="map-tracker-top">
+                        <div class="remove-map menu-icon">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </div>
+
+                        <div class="left menu-icon">
+                            <i class='bx bx-current-location'></i>
+                        </div>
+                    </div>
+
+                    <div class="map-holder">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe  id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=ostrich%20bakery%20lokoja&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                </iframe>
+                                <a href="https://123movies-a.com">
+                                </a>
+
+                              
+                                <a href="https://www.embedgooglemap.net">map iframe</a>
+                                
+                            </div>
+                        </div>
+                        <!-- <div id="map"></div> -->
+                    </div>
+
+                    <div class="user-location-info-holder">
+                        <div class="time-to-get-to-user">
+                            <div class="thick-line"></div>
+                            <div class="vert flex">
+                                <div class="flex2">
+                                    <div class="icon-1">
+                                        <img src="IMG/clock-icon.png" alt="">
+                                    </div>
+                                    <div class="info-div">
+                                        <p class="small-dark-text">Delivery Time</p>
+                                        <p class="txt-600">26 minutes</p>
+                                    </div>
+                                </div>
+                                <ul class="vert-dot dots">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li class="hide-dot"></li>
+                                    <li></li>
+                                </ul>
+                                <div class="flex2">
+                                    <div class="icon-1">
+                                        <img src="IMG/fire-icon.png" alt="">
+                                    </div>
+                                    <div class="info-div">
+                                        <p class="small-dark-text">Your Address</p>
+                                        <p class="txt-600">Lekki Phase II,Lagos State</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-info-holder">
+                            <div class="user-dp-holder">
+                                <img src="IMG/profileimage.jpg" alt="">
+                            </div>
+                            <div class="user-info">
+                                <p class="txt-600-dark">Robort jackson</p>
+                                <p class="small-dark-text">Food Courier</p>
+                                <ul class="stars">
+                                    <li><i class='bx bxs-star'></i></li>
+                                    <li><i class='bx bxs-star'></i></li>
+                                    <li><i class='bx bxs-star'></i></li>
+                                    <li><i class='bx bxs-star'></i></li>
+                                    <li><i class='bx bxs-star-half'></i></li>
+                                </ul>
+                            </div>
+                            <div class="call-icon">
+                                <div class="call">
+                                    <i class='bx bxs-phone'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-menu">
+                <ul class="menu-list">
+                    <li class="active"><i class='bx bx-home-alt'></i></li>
+                    <li><i class='bx bx-heart'></i></li>
+                    <li class="notif"><i class='bx bx-bell'></i></li>
+                    <li class="cart-menu"><i class='bx bx-cart-alt'></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="background-menu">
+        <div class="background-menu-top">
+            <div class="remove-bg-menu left menu-icon">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="bg-menu-list">
+            <ul>
+                <li>
+                    <div class="bg-icon">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <p class="bg-icon-label">Favourite</p>
+                </li>
+                <li>
+                    <div class="bg-icon">
+                        <ion-icon name="card-outline"></ion-icon>
+                    </div>
+                    <p class="bg-icon-label">Payment Methods</p>
+                </li>
+                <li class="myOrder">
+                    <div class="bg-icon">
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                    <p class="bg-icon-label">Track My Orders</p>
+                </li>
+                <li>
+                    <div class="bg-icon">
+                        <i class='bx bx-history'></i>
+                    </div>
+                    <p class="bg-icon-label">History</p>
+                </li>
+                <li>
+                    <div class="bg-icon">
+                        <i class='bx bx-message-rounded-dots'></i>
+                    </div>
+                    <p class="bg-icon-label">Complaints</p>
+                </li>
+                <li>
+                    <div class="bg-icon">
+                        <i class='bx bx-notepad'></i>
+                    </div>
+                    <p class="bg-icon-label">Privacy Policy</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-exit">
+            <div class="bg-icon">
+                <i class='bx bx-log-out'></i>
+            </div>
+            <p class="bg-icon-label">Log Out</p>
+        </div>
+    </div>
+        <script src="JS/script.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9TbiPecNYMZjFd5Y4NtsOG0CQ-RlwCSo&callback=initMap&v=weekly"
+            defer></script>
+</body>
+
+</html>
